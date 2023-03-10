@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+   
   }
   
   li {
@@ -12,17 +12,31 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    
   }
   h1{
   font-size: 45px;
  text-align: center;
 
   }
+
+.img{
+  width: 320px;
+  height: 424px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 20px;
+  outline-color: #d7d7d7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  
+}
