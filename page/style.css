@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,7 +35,7 @@ ul {
  font-family: 'Trebuchet MS', sans-serif;
 
   }
-  .ring{
+  .pamats{
     display: grid;
   place-items: center;
   grid-template-columns: repeat(6, 1fr);
@@ -63,4 +67,27 @@ ul {
 }
 .text{
   grid-column: 2/span 2;
+}
+.kaka{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+#works{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20rem;
+ 
+  
+  
+}
+.square{
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+
 }
