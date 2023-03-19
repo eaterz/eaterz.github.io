@@ -89,5 +89,26 @@ body{
     width: 400px;
     height: 400px;
     border: 2px solid black;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
   
+  }
+  .dziv{
+    width:600px;
+    height: 400px;
+
+    object-fit: cover;
+  }
+  .do{
+    width:600px;
+    height: 400px;
+
+    object-fit: cover;
+  }
+  .animals{
+    width:600px;
+    height: 400px;
+
+    object-fit: cover;
   }
