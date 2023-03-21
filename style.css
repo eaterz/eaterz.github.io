@@ -52,8 +52,9 @@ html {
     .active:hover{
       border-radius: 10vw;
       font-size: large;
-      background-color: rgb(209, 209, 209);
-      transition-duration: 0.5s;
+      color: white;
+      background-color: rgb(0, 0, 0);
+      transition-duration: 0.4s;
       cursor: pointer;
     }
     .apaks{
@@ -83,7 +84,6 @@ html {
       grid-column: 5/span 1;
       grid-row: 1/2;
       object-fit: cover;
-      padding-top: 100px;
     
     }
   
