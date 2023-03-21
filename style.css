@@ -46,14 +46,14 @@ html {
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-family: 'Trebuchet MS', sans-serif;
       
     }
+    
     .active:hover{
       border-radius: 10vw;
       font-size: large;
       background-color: rgb(209, 209, 209);
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       cursor: pointer;
     }
     .apaks{
@@ -74,7 +74,7 @@ html {
     height: 70vh;
     width: 100vw;
     gap: 5rem;
-    margin-bottom: 10rem;    
+    margin-bottom: 10rem;   
     
     }
    
