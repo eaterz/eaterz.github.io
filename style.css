@@ -3,7 +3,7 @@ body{
     overflow-y: scroll;
   }
 html {
-    color-scheme:dark light;
+
         scroll-behavior:smooth;
 }
   ul {
