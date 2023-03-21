@@ -1,42 +1,69 @@
 body{
     overflow-x: hidden;
     overflow-y: scroll;
+    font-family: 'Trebuchet MS', sans-serif;
   }
 html {
 
         scroll-behavior:smooth;
 }
   ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      position: fixed;
+      position: sticky;
+      top: 0;
+      background-color: white;
     }
-    
+    .button{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      width: 100%;
+
+    }
+
+    .button > div {
+      display: flex;
+      gap: 1rem;
+    }
     li {
-      float: left;
+   
+      margin: 20px;
     }
-    
-    li a {
+    .r{
+      width: 100px;
+      height: 100px;
+    }
+    .active {
       display: block;
       color: rgb(0, 0, 0);
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      font-family: 'Trebuchet MS', sans-serif;
       
+    }
+    .active:hover{
+      border-radius: 10vw;
+      font-size: large;
+      background-color: rgb(209, 209, 209);
+      transition-duration: 1s;
+      cursor: pointer;
     }
     .apaks{
       font-size:larger;
     }
-      
-    
-    
-    
+
     .virs{
     font-size: 45px;
    text-align: left;
-   font-family: 'Trebuchet MS', sans-serif;
+   
   
     }
     .pamats{
@@ -44,10 +71,10 @@ html {
     place-items: center;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     gap: 20px;
-    
+    margin-bottom: 20rem;    
     }
    
     .attels{
@@ -55,7 +82,7 @@ html {
       grid-column: 5/span 1;
       grid-row: 1/2;
       object-fit: cover;
-      padding-top: 50px;
+      padding-top: 100px;
     
     }
   
