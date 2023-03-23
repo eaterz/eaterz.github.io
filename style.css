@@ -41,12 +41,15 @@ html {
       height: 100px;
     }
     .active {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: rgb(0, 0, 0);
       text-align: center;
-      padding: 14px 16px;
+      width: 100px;
+      height: 50px;
       text-decoration: none;
-      
+      transition-duration: 0.4s;
     }
     
     .active:hover{
@@ -54,7 +57,7 @@ html {
       font-size: large;
       color: white;
       background-color: rgb(0, 0, 0);
-      transition-duration: 0.4s;
+      
       cursor: pointer;
     }
     .apaks{
