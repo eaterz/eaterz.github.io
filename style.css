@@ -40,6 +40,7 @@ html {
       width: 100px;
       height: 100px;
     }
+    
     .active {
       display: flex;
       align-items: center;
@@ -50,6 +51,7 @@ html {
       height: 50px;
       text-decoration: none;
       transition-duration: 0.4s;
+      
     }
     
     .active:hover{
