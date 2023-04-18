@@ -200,8 +200,9 @@ nav {
  }
 
 @media screen and (max-width:764px){
-.active2{
+.button > li{
   display: none;
+  visibility: hidden;
 }
 .button > div{
   display: flex;
@@ -218,7 +219,7 @@ width: 100vw;
 height: 100vh;
 position: absolute;
 top: 10%;
-left: 25%;
+left: 30%;
 z-index: -999;
 }
 footer {
@@ -306,12 +307,13 @@ footer {
 
 }
 #toggle:checked ~ .menu{
-  height: 400px;
+  height: 200px;
   margin-top: 100px;
   transition: all 0.5s ease;
   transform: translateX(0%);
-  background-color: rgb(103, 255, 255);
-  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50vw 50vw;
+  border: 2px solid black;
 
 }
 #toggle:checked ~ .label .bar:nth-child(1){
