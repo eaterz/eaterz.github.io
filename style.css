@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 0;
+}
+
 body{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -7,7 +13,10 @@ html {
 
         scroll-behavior:smooth;
 }
-  ul {
+nav {
+  position: relative;
+}
+  ul{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,9 +25,11 @@ html {
       padding: 0;
       height: 100px;
       overflow: hidden;
-      position: sticky;
+      position: fixed;
       top: 0;
+      width: 100%;
       background-color: white;
+      
     }
     .button{
       display: flex;
@@ -26,7 +37,7 @@ html {
       align-items: center;
       max-width: 1400px;
       width: 100%;
-
+    
     }
 
     .button > div {
@@ -34,12 +45,14 @@ html {
       gap: 1rem;
     }
     li {
-   
+      
       margin: 20px;
     }
     .r{
       width: 100px;
       height: 100px;
+      
+ 
     }
     
     .active {
@@ -63,6 +76,8 @@ html {
       
       cursor: pointer;
     }
+    
+  
     .apaks{
       font-size:larger;
     }
@@ -70,9 +85,22 @@ html {
     .virs{
     font-size: 45px;
    text-align: left;
-   
-  
     }
+    .inst{
+    height: 50px;
+    width: 50px;
+   }
+   .fc{
+    height: 50px;
+    width: 50px;
+   }
+   .git{
+    height: 50px;
+    width: 50px;
+   }
+   .kont{
+    margin-top: 10px;
+   }
     .pamats{
       display: grid;
     place-items: center;
@@ -92,7 +120,7 @@ html {
     
     }
   
-  .img{
+  .bilde{
     width: 320px;
     height: 424px;
     outline-style: solid;
@@ -157,3 +185,135 @@ html {
  .space {
   height: 10vh;
  }
+ input{
+  display: none;
+  top: 0;
+  left: 0;
+ opacity: 0.6;
+ width: 45px;
+ height: 45px; 
+ 
+ }
+ input:hover{
+  cursor: pointer;
+
+ }
+
+@media screen and (max-width:764px){
+
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 100vw;
+height: 100vh;
+position: absolute;
+top: 10%;
+left: 25%;
+z-index: -999;
+}
+footer {
+  height: 100vh;
+  margin-top: 50rem;
+}
+  nav{
+    position: relative;
+  }
+  
+  .pamats{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+  header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    margin-top:0 ;
+
+  }
+  .menu{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    z-index:999;
+    width: 635px;
+    height: 0;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+  .text{
+    display: grid;
+    place-items: center;
+    margin-top: 7rem;
+    text-align: center;
+    width: 400px;
+  }
+  .attels{
+    margin-bottom: 5rem;
+  }
+  .kaka{
+    margin-top: 20rem;
+    
+  }
+  .kopne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 800px;
+    text-align: center;
+  }
+  label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 9999;
+
+
+  }
+  .square{
+    height: 400px;
+  
+  }
+.bar{
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  transform-origin:15% 50% ;
+  transition: all 0.5s ease;
+
+}
+#toggle:checked ~ .menu{
+  height: 400px;
+  margin-top: 100px;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+  background-color: rgb(255, 209, 209);
+  border-radius: 20px;
+}
+#toggle:checked ~ .label .bar:nth-child(1){
+  rotate: 45deg;
+}
+#toggle:checked ~ .label .bar:nth-child(2){
+  opacity: 0;
+}
+#toggle:checked ~ .label .bar:nth-child(3){
+  rotate: -45deg;
+}
+
+
+}
+
+
