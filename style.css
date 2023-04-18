@@ -241,11 +241,12 @@ footer {
     top: 10%;
     bottom: 0;
     z-index:999;
-    width: 635px;
+    width: 45rem;
     height: 0;
     overflow: hidden;
     transform: translateX(100%);
     transition: all 0.5s ease;
+    
   }
   .text{
     display: grid;
@@ -302,6 +303,7 @@ footer {
   transform: translateX(0%);
   background-color: rgb(255, 209, 209);
   border-radius: 20px;
+
 }
 #toggle:checked ~ .label .bar:nth-child(1){
   rotate: 45deg;
