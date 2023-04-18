@@ -203,6 +203,12 @@ nav {
 .active2{
   display: none;
 }
+.button > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 main{
 display: flex;
 justify-content: center;
@@ -241,9 +247,10 @@ footer {
   .menu{
     position: absolute;
     top: 10%;
+    left: 10%;
     bottom: 0;
     z-index:999;
-    width: 45rem;
+    width: 30rem;
     height: 0;
     overflow: hidden;
     transform: translateX(100%);
@@ -303,7 +310,7 @@ footer {
   margin-top: 100px;
   transition: all 0.5s ease;
   transform: translateX(0%);
-  background-color: rgb(255, 209, 209);
+  background-color: rgb(103, 255, 255);
   border-radius: 20px;
 
 }
