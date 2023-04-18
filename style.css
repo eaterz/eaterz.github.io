@@ -200,7 +200,9 @@ nav {
  }
 
 @media screen and (max-width:764px){
-
+.active2{
+  display: none;
+}
 main{
 display: flex;
 justify-content: center;
