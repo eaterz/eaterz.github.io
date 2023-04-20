@@ -204,6 +204,7 @@ nav {
   display: none;
   visibility: hidden;
 }
+
 .button > div{
   display: flex;
   justify-content: center;
@@ -253,7 +254,7 @@ footer {
     bottom: 0;
     z-index:999;
     width: 30rem;
-    height: 0;
+
     overflow: hidden;
     transform: translateX(100%);
     transition: all 0.5s ease;
@@ -294,6 +295,11 @@ footer {
 
 
   }
+  label:checked{
+    background-color: red;
+
+  }
+  
   .square{
     height: 400px;
   
@@ -303,7 +309,7 @@ footer {
   height: 5px;
   background-color: black;
   border-radius: 10px;
-  transform-origin:15% 50% ;
+  transform-origin:0% 50% ;
   transition: all 0.5s ease;
 
 }
@@ -317,13 +323,13 @@ footer {
   border: 2px solid black;
 
 }
-#toggle:checked ~ .label .bar:nth-child(1){
+#toggle:checked ~ label .bar:nth-child(1){
   rotate: 45deg;
 }
-#toggle:checked ~ .label .bar:nth-child(2){
+#toggle:checked ~ label .bar:nth-child(2){
   opacity: 0;
 }
-#toggle:checked ~ .label .bar:nth-child(3){
+#toggle:checked ~ label .bar:nth-child(3){
   rotate: -45deg;
 }
 
