@@ -205,6 +205,7 @@ nav {
  
 
 @media screen and (max-width:764px){
+
 .button > li{
   display: none;
   visibility: hidden;
@@ -300,11 +301,6 @@ footer {
 
 
   }
-  label:checked{
-    background-color: red;
-
-  }
-  
   .square{
     height: 400px;
   
