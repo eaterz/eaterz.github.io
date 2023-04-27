@@ -4,269 +4,248 @@
   padding: 0;
 }
 
-body{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-family: 'Trebuchet MS', sans-serif;
-  }
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Trebuchet MS", sans-serif;
+}
 html {
-
-        scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 nav {
   position: relative;
 }
-  ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      height: 100px;
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: white;
-     
-    }
-    .button{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1400px;
-      width: 100%;
-    
-    }
-
-    .button > div {
-      display: flex;
-      gap: 1rem;
-    }
-    li {
-      
-      margin: 20px;
-    }
-    .r{
-      width: 100px;
-      height: 100px;
-      
- 
-    }
-    
-    .active {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      width: 100px;
-      height: 50px;
-      text-decoration: none;
-      transition-duration: 0.4s;
-      
-    }
-    
-    .active:hover{
-      border-radius: 10vw;
-      font-size: large;
-      color: white;
-      background-color: rgb(0, 0, 0);
-      
-      cursor: pointer;
-    }
-    
-  
-    .apaks{
-      font-size:larger;
-    }
-
-    .virs{
-    font-size: 2rem;
-   text-align: left;
-    }
-    .inst{
-    height: 50px;
-    width: 50px;
-   }
-   .fc{
-    height: 50px;
-    width: 50px;
-   }
-   .git{
-    height: 50px;
-    width: 50px;
-   }
-   .kont{
-    margin-top: 10px;
-   }
-    .pamats{
-      display: grid;
-    place-items: center;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    height: 100vh;
-    width: 100vw;
-    gap: 5rem;
-    
-    }
-   
-    .attels{
-      
-      grid-column: 5/span 1;
-      grid-row: 1/2;
-      object-fit: cover;
-    
-    }
-  
-  .bilde{
-    width: 320px;
-    height: 424px;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-offset: 10px;
-    outline-color: #d7d7d7;
-    border-radius: 10vw 10vw 10vw 10vw;
-    
-  }
-  .text{
-    grid-column: 3/span 2;
-  }
-  .kaka{
-    display: grid;
-    place-items: center;
-    grid-template-rows: repeat(3, 1fr);
-    height: 150vh;
-    margin-top: 10rem;
-    width: 100vw;
-    gap: 3rem;
-    margin-bottom: 20rem;
-  }
-  .kopne{
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    width: 800px;
-    height: 400px;
-    gap: 6rem;
-
-  }
-  .square{
-    width: 400px;
-    height: 400px;
-    border: 2px solid black;
-    overflow: hidden;
-    display: grid;
-    place-content: center;
-  
-  }
-  .square:hover{
-    box-shadow: 0 2px 100px 0 rgba(0,0,0,.2);
-    cursor: pointer;
-  }
-  .dziv{
-    width:600px;
-    height: 400px;
-    
-    object-fit: cover;
-  }
-  .do{
-    width:400px;
-    height: 300px;
-    object-fit: cover;
-
-  }
-  .animals{
-    width:600px;
-    height: 400px;
-    object-fit: cover;
-  }
- .txt{
-  font-size: large;
- }
-
- .space {
-  height: 10vh;
- }
- input{
-  display: none;
-  top: 0;
-  left: 0;
- opacity: 0.6;
- width: 45px;
- height: 45px; 
- 
- }
- input:hover{
-  cursor: pointer;
-
- }
- 
-
-@media screen and (max-width:764px){
-
-.button > li{
-  display: none;
-  visibility: hidden;
-}
-
-.button > div{
+ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
   width: 100%;
 }
 
-main{
+.button > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 1rem;
+}
+li {
+  margin: 20px;
+}
+.r {
+  width: 100px;
+  height: 100px;
+}
+
+.active {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.active:hover {
+  border-radius: 10vw;
+  font-size: large;
+  color: white;
+  background-color: rgb(0, 0, 0);
+
+  cursor: pointer;
+}
+
+.apaks {
+  font-size: larger;
+}
+
+.virs {
+  font-size: 2rem;
+  text-align: left;
+}
+.inst {
+  height: 50px;
+  width: 50px;
+}
+.fc {
+  height: 50px;
+  width: 50px;
+}
+.git {
+  height: 50px;
+  width: 50px;
+}
+.kont {
+  margin-top: 10px;
+}
+.pamats {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  height: 100vh;
   width: 100vw;
-  height: 100vh;
-
-
+  gap: 5rem;
 }
-footer {
-  height: 100vh;
-  margin-top: 50rem;
+
+.attels {
+  grid-column: 5 / span 1;
+  grid-row: 1/2;
+  object-fit: cover;
 }
-  nav{
+
+.bilde {
+  width: 320px;
+  height: 424px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 10px;
+  outline-color: #d7d7d7;
+  border-radius: 10vw 10vw 10vw 10vw;
+}
+.text {
+  grid-column: 3 / span 2;
+}
+.kaka {
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(3, 1fr);
+  height: 150vh;
+  margin-top: 10rem;
+  width: 100vw;
+  gap: 3rem;
+  margin-bottom: 20rem;
+}
+.kopne {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  height: 400px;
+  gap: 6rem;
+}
+.square {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+.square:hover {
+  box-shadow: 0 2px 100px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.dziv {
+  width: 600px;
+  height: 400px;
+
+  object-fit: cover;
+}
+.do {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.animals {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+.txt {
+  font-size: large;
+}
+
+.space {
+  height: 10vh;
+}
+input {
+  display: none;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  width: 45px;
+  height: 45px;
+}
+input:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 764px) {
+  html {
+    width: 100%;
+  }
+  .button > li {
+    display: none;
+    visibility: hidden;
+  }
+
+  .button > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  footer {
+    height: 100vh;
+    margin-top: 50rem;
+  }
+  nav {
     position: relative;
   }
-  
-  .pamats{
+
+  .pamats {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    
   }
-  header{
+  header {
     position: fixed;
     background-color: white;
     width: 100%;
     height: 100px;
     top: 0;
-    margin-top:0 ;
-
+    margin-top: 0;
   }
-  .menu{
+  .menu {
     position: absolute;
     top: 10%;
     left: 10%;
     bottom: 0;
-    z-index:999;
+    z-index: 999;
     width: 20rem;
     overflow: hidden;
     transform: translateX(100%);
     transition: all 0.5s ease;
-    
   }
-  .works{
+  .works {
     margin-top: 30rem;
   }
-  .text{
+  .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,14 +254,13 @@ footer {
     text-align: center;
     width: 300px;
   }
-  .attels{
+  .attels {
     margin-bottom: 5rem;
   }
-  .kaka{
+  .kaka {
     margin-top: 20rem;
-    
   }
-  .kopne{
+  .kopne {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,7 +269,7 @@ footer {
     height: 800px;
     text-align: center;
   }
-  label{
+  label {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -300,49 +278,41 @@ footer {
     right: 30px;
     top: 20px;
     z-index: 9999;
-    
-
   }
-  .square{
+  .square {
     height: 400px;
     width: 300px;
-  
   }
-.bar{
-  width: 40px;
-  height: 5px;
-  background-color: black;
-  border-radius: 10px;
-  transform-origin:0% 50% ;
-  transition: all 0.5s ease;
-
-}
-#toggle:checked ~ .menu{
-  height: 200px;
-  margin-top: 100px;
-  transition: all 0.5s ease;
-  transform: translateX(0%);
-  background-color: rgb(255, 255, 255);
-  border-radius: 10vw 10vw;
-  border: 2px solid black;
-
-}
-#toggle:checked ~ label .bar:nth-child(1){
-  rotate: 45deg;
-  
-}
-#toggle:checked ~ label .bar:nth-child(2){
-  transform: translate(0px,-100px);
-  opacity:0;
-  transition: all 0.000001s ease-out;
-  
-}
-#toggle:checked ~ label .bar:nth-child(3){
-  rotate: -45deg;
-}
-#toggle:checked ~ label {
-  rotate: 360deg;
-  transition: all 0.5s ease;
-}
-
+  .bar {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: 0% 50%;
+    transition: all 0.5s ease;
+  }
+  #toggle:checked ~ .menu {
+    height: 200px;
+    margin-top: 100px;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10vw 10vw;
+    border: 2px solid black;
+  }
+  #toggle:checked ~ label .bar:nth-child(1) {
+    rotate: 45deg;
+  }
+  #toggle:checked ~ label .bar:nth-child(2) {
+    transform: translate(0px, -100px);
+    opacity: 0;
+    transition: all 0.000001s ease-out;
+  }
+  #toggle:checked ~ label .bar:nth-child(3) {
+    rotate: -45deg;
+  }
+  #toggle:checked ~ label {
+    rotate: 360deg;
+    transition: all 0.5s ease;
+  }
 }
